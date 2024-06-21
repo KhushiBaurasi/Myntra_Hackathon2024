@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Dress Try-On</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Myntra Story Feature with Virtual Try-On</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <video id="video" autoplay></video>
+            <canvas id="canvas"></canvas>
+            <img id="uploadedImage" alt="Uploaded Image">
+            <img id="dressedImage" alt="Dressed Image">
+            <div id="loading" class="loading">Loading...</div>
+        </div>
+        <div class="controls">
+            <div class="control-group">
+                <button id="startCamera"><i class="fas fa-camera"></i> Start Camera</button>
+                <button id="stopCamera"><i class="fas fa-stop"></i> Stop Camera</button>
+                <button id="snap"><i class="fas fa-camera-retro"></i> Snap Photo</button>
+            </div>
+            <div class="control-group">
+                <input type="file" id="upload" accept="image/*">
+                <button id="tryOnDress"><i class="fas fa-tshirt"></i> Try On Dress</button>
+                <button id="reset"><i class="fas fa-redo"></i> Reset</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
